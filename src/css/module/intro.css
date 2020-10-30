@@ -1,0 +1,122 @@
+.intro_container {
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 39px;
+  max-width: 1920px;
+  background: #FFFFFF;
+}
+
+.intro {
+  position: relative;
+  padding: 11% 5% 14%;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #333333;
+}
+
+.intro__swiper {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.swiper-container {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide_one {
+  background-image: url('./../../img/img-xs-min/banner-xs@1x.jpg');
+}
+
+.slide_two {
+  background-image: url('./../../img/img-xs-min/banner_two-xs@1x-min.jpg');
+}
+
+.slide_three {
+  background-image: url('./../../img/img-xs-min/banner_three-xs@1x-min.jpg');
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+.intro__header {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.intro__desk {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+  margin-bottom: 13.5%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.01em;
+}
+
+.btn-link {
+  position: relative;
+  z-index: 2;
+  padding: 11px 29px 14px;
+  border: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  letter-spacing: -0.005em;
+  background-color: #FF9900;
+  cursor: pointer;
+}
+
+.btn-link:hover,
+.btn-link:active,
+.btn-link:focus {
+  background: rgba(255, 153, 0, 0.6);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .slide_one {
+    background-image: url('./../../img/img-xs-min/banner-xs@2x.jpg');
+  }
+
+  .slide_two {
+    background-image: url('./../../img/img-xs-min/banner_two-xs@2x-min.jpg');
+  }
+
+  .slide_three {
+    background-image: url('./../../img/img-xs-min/banner_three-xs@2x-min.jpg');
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (-o-min-device-pixel-ratio: 3/1), (min-resolution: 3dppx) {
+  .slide_one {
+    background-image: url('./../../img/img-xs-min/banner-xs@3x.jpg');
+  }
+
+  .slide_two {
+    background-image: url('./../../img/img-xs-min/banner_two-xs@3x-min.jpg');
+  }
+
+  .slide_three {
+    background-image: url('./../../img/img-xs-min/banner_three-xs@3x-min.jpg');
+  }
+}

@@ -1,0 +1,108 @@
+.todo {
+  margin-bottom: 39px
+}
+
+.todo__heading {
+  margin-bottom: 27px;
+}
+
+.btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.active {
+  position: relative;
+  color: #FF9900;
+}
+
+.btn-group__step {
+  margin-right: 0;
+  padding: 9px 0 0 0;
+  padding-left: 0;
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+  background: inherit;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.btn-group__step:hover,
+.btn-group__step:active,
+.btn-group__step:focus {
+  color: #FF9900;
+}
+
+.todo__article {
+  padding-top: 53%;
+  background-image: url('./../../img/img-xs-min/todo-xs@1x.jpg');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: 100%;
+}
+
+.todo__article__heading {
+  margin-bottom: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.todo__article__desk {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.todo__article__link {
+  display: inline-block;
+  margin-right: 7px;
+  padding: 11px 44px 14px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.link-contract {
+  display: inline-block;
+  padding: 10px 30px 13px 32px;
+  border: 1px solid #333333;
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: inherit;
+  -webkit-transition: color 0.2s,
+    background 0.2s;
+  -o-transition: color 0.2s,
+    background 0.2s;
+  transition: color 0.2s,
+    background 0.2s;
+
+}
+
+.link-contract:hover,
+.link-contract:active,
+.link-contract:focus {
+  background: #333333;
+  color: #FFFFFF;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .todo__article {
+    background-image: url('./../../img/img-xs-min/todo-xs@2x.jpg');
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (-o-min-device-pixel-ratio: 3/1), (min-resolution: 3dppx) {
+  .todo__article {
+    background-image: url('./../../img/img-xs-min/todo-xs@3x.jpg');
+  }
+}

@@ -1,0 +1,302 @@
+@media only screen and (min-width: 1024px) {
+  .header-bar {
+    padding: 26px 48px 26px 50px;
+  }
+
+  .header-logo {
+    margin-left: 4px;
+  }
+
+  .burger {
+    margin-top: 8px;
+  }
+
+  .burger::after {
+    top: 8px;
+  }
+
+  .burger::before {
+    top: 18px;
+  }
+
+  .search-btn {
+    margin-top: 12px;
+  }
+
+  .intro_container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .intro {
+    padding: 17.5% 15% 12.3% 4.85%;
+    text-align: left;
+  }
+
+  .slide_one {
+    background-image: url('./../../img/img-lg-min/banner-lg@1x.jpg');
+  }
+
+  .slide_two {
+    background-image: url('./../../img/img-lg-min/banner_two-lg@1x-min.jpg');
+  }
+
+  .slide_three {
+    background-image: url('./../../img/img-lg-min/banner_three-lg@1x-min.jpg');
+  }
+
+  .intro__header {
+    margin-bottom: 10px;
+    letter-spacing: 0.001em;
+  }
+
+  .intro__desk {
+    margin-bottom: 14.8%;
+  }
+
+  .btn-link {
+    padding: 33px 38px;
+  }
+
+  .about {
+    margin-bottom: 58px;
+  }
+
+  .about__desk {
+    margin-bottom: 58px;
+    padding-right: 30px;
+  }
+
+  .preview {
+    padding-top: 50.3%;
+    margin-bottom: 49px;
+    background-image: url('./../../img/img-lg-min/about-lg@1x.jpg');
+  }
+
+  .preview__container {
+    padding: 39px 50px 40px 43px;
+  }
+
+  .preview__desk {
+    margin-right: 150px;
+    line-height: 32px;
+  }
+
+  .preview__btn {
+    margin-top: 5px;
+    padding: 18px 38px;
+  }
+
+  .summary__img_consult {
+    padding: 52px 100px 48px 348px;
+    background-position: 151px 64px, 110px 95px;
+    background-size: 156px 156px, 120px 120px;
+  }
+
+  .summary__img_quality {
+    padding: 52px 100px 49px 348px;
+    background-position: 158px 60px, 110px 96px;
+    background-size: 136px 136px, 120px 120px;
+  }
+
+  .todo {
+    margin-bottom: 59px;
+  }
+
+  .todo__heading {
+    margin-bottom: 27px;
+    text-indent: -6px;
+  }
+
+  .btn-group {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 12px;
+    margin-bottom: 48px;
+  }
+
+  .btn-group__step:not(:last-of-type) {
+    margin-right: 89px;
+  }
+
+  .todo__article {
+    padding-top: 0;
+    padding-right: 54%;
+    background-image: url('./../../img/img-lg-min/todo-lg@1x.jpg');
+    background-position: right 10px;
+    background-repeat: no-repeat;
+    background-size: 47.3%;
+  }
+
+  .todo__article__heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .todo__article__link {
+    margin-top: 0;
+    padding: 20px 37px 20px 38px;
+  }
+
+  .question {
+    padding-bottom: 41px;
+  }
+
+  .question__heading {
+    letter-spacing: 0;
+  }
+
+  .question__item:nth-child(1) {
+    padding-top: 37px;
+    padding-bottom: 32px;
+  }
+
+  .question__item:nth-child(2) {
+    padding-top: 25px;
+    padding-bottom: 27px;
+  }
+
+  .question__item:nth-child(3) {
+    padding-top: 27px;
+    padding-bottom: 32px;
+  }
+
+  .question__item:nth-child(5) {
+    padding-top: 27px;
+    padding-bottom: 34px;
+  }
+
+  .question__desk {
+    letter-spacing: 0.01em;
+  }
+
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+
+  .footer_wrap {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: 145px;
+  }
+
+  .request {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .request-form {
+    padding-bottom: 0;
+  }
+
+  .request-form__heading {
+    margin-bottom: 23px;
+  }
+
+  .form_input {
+    padding: 22px 0 18px 25px;
+    margin-bottom: 24px
+  }
+
+  .request-form__message {
+    margin-bottom: 31px;
+    padding: 16px 0 15px 25px;
+  }
+
+  .request-form__button {
+    padding: 15px 41px 13px 38px;
+  }
+
+  .footer__logo {
+    -ms-grid-column-align: left;
+        justify-self: left;
+    margin: 0 0 12px 0;
+  }
+
+  .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    margin: 0 0 108px 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-nav__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .footer-nav__link {
+    display: block;
+    font-size: 18px;
+    line-height: 36px;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+
+  .footer-nav__link:hover,
+  .footer-nav__link:active,
+  .footer-nav__link:focus {
+    color: #FF9900;
+  }
+}
+
+@media screen and (min-width: 1010px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1010px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1010px) and (min-resolution: 2dppx) {
+  .slide_one {
+    background-image: url('./../../img/img-lg-min/banner-lg@2x.jpg');
+  }
+
+  .slide_two {
+    background-image: url('./../../img/img-lg-min/banner_two-lg@2x-min.jpg');
+  }
+
+  .slide_three {
+    background-image: url('./../../img/img-lg-min/banner_three-lg@2x-min.jpg');
+  }
+
+  .preview {
+    background-image: url('./../../img/img-lg-min/about-lg@2x.jpg');
+  }
+
+  .todo__article {
+    background-image: url('./../../img/img-lg-min/todo-lg@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1010px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1010px) and (-o-min-device-pixel-ratio: 3/1), screen and (min-width: 1010px) and (min-resolution: 3dppx) {
+  .slide_one {
+    background-image: url('./../../img/img-lg-min/banner-lg@3x.jpg');
+  }
+
+  .slide_two {
+    background-image: url('./../../img/img-lg-min/banner_two-lg@3x-min.jpg');
+  }
+
+  .slide_three {
+    background-image: url('./../../img/img-lg-min/banner_three-lg@3x-min.jpg');
+  }
+
+  .preview {
+    background-image: url('./../../img/img-lg-min/about-lg@3x.jpg');
+  }
+
+  .todo__article {
+    background-image: url('./../../img/img-lg-min/todo-lg@3x.jpg');
+  }
+}

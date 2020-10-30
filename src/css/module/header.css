@@ -1,0 +1,264 @@
+.header {
+  position: relative;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 15px 7px;
+}
+
+.header-logo {
+  font-size: 0;
+  line-height: 0;
+}
+
+.header-nav {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  max-width: 320px;
+  border-bottom-right-radius: 10px;
+  background-color: #333333;
+  color: #FFFFFF;
+  -webkit-transform: translateX(-120%);
+      -ms-transform: translateX(-120%);
+          transform: translateX(-120%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.header-nav_active {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+}
+
+.close-btn {
+  position: relative;
+  margin-left: 40px;
+  padding: 12px;
+  border: 1px solid #7C7C7C;
+  border-radius: 30%;
+  background-color: inherit;
+  -webkit-transition: border 0.2s, -webkit-box-shadow 0.2s;
+  transition: border 0.2s, -webkit-box-shadow 0.2s;
+  -o-transition: border 0.2s, box-shadow 0.2s;
+  transition: border 0.2s, box-shadow 0.2s;
+  transition: border 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.close-btn::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  width: 16px;
+  height: 2px;
+  background-color: #FFFFFF;
+  -webkit-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.close-btn::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  width: 16px;
+  height: 2px;
+  background-color: #FFFFFF;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.close-btn:hover,
+.close-btn:active,
+.close-btn:focus {
+  border: 1px solid #fa0202;
+}
+
+.close-btn:hover.close-btn::before,
+.close-btn:hover.close-btn::after,
+.close-btn:active.close-btn::before,
+.close-btn:active.close-btn::after,
+.close-btn:focus.close-btn::before,
+.close-btn:focus.close-btn::after {
+  background-color: #fa0202;
+}
+
+.close-btn:focus,
+.nav-bar__link:focus {
+  -webkit-box-shadow: 0 0 10px #FF9900;
+          box-shadow: 0 0 10px #FF9900;
+}
+
+.nav-bar__link {
+  -webkit-transition:   color 0.2s;
+  -o-transition:   color 0.2s;
+  transition:   color 0.2s;
+}
+
+.nav-bar__link:hover,
+.nav-bar__link:focus,
+.nav-bar__link:active {
+  color: #FF9900;
+}
+
+.search-btn {
+  display: none;
+}
+
+.header-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #7C7C7C;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  list-style: none;
+}
+
+.header-nav__item {
+  width: 50%;
+  border: 1px solid #7C7C7C;
+  text-align: center;
+}
+
+.header-nav__link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: color 0.2s, -webkit-box-shadow 0.2s;
+  transition: color 0.2s, -webkit-box-shadow 0.2s;
+  -o-transition: color 0.2s, box-shadow 0.2s;
+  transition: color 0.2s, box-shadow 0.2s;
+  transition: color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.header-nav__link:hover,
+.header-nav__link:active,
+.header-nav__link:focus {
+  color: #FF9900;
+  -webkit-box-shadow: 0 0 10px #FF9900;
+          box-shadow: 0 0 10px #FF9900;
+}
+
+
+.burger {
+  position: relative;
+  padding: 4px 13px 13px 12px ;
+  border: none;
+  border-top: 3px solid #333333;
+  background-color: inherit;
+  cursor: pointer;
+  -webkit-transition: border-color 0.2s;
+  -o-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.burger::after,
+.burger::before {
+  content: '';
+  position: absolute;
+  display: block;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: #333333;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: background 0.2s,
+    -webkit-transform 0.2s;
+  transition: background 0.2s,
+    -webkit-transform 0.2s;
+  -o-transition: transform 0.2s,
+    background 0.2s;
+  transition: transform 0.2s,
+    background 0.2s;
+  transition: transform 0.2s,
+    background 0.2s,
+    -webkit-transform 0.2s;
+}
+
+.burger::after {
+  top: 5px;
+}
+
+.burger::before {
+  top: 13px;
+}
+
+.burger:hover.burger::before,
+.burger:active.burger::before,
+.burger:focus.burger::before {
+  background: #FF9900;
+  -webkit-transform: scaleX(0.55);
+      -ms-transform: scaleX(0.55);
+          transform: scaleX(0.55);
+}
+
+.burger:hover,
+.burger:active,
+.burger:focus {
+  border-color: #FF9900;
+}
+
+.burger:hover.burger::after,
+.burger:active.burger::after,
+.burger:focus.burger::after {
+  background: #FF9900;
+  -webkit-transform: scaleX(0.8);
+      -ms-transform: scaleX(0.8);
+          transform: scaleX(0.8);
+}

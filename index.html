@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Евклид - проектные системы</title>
+
+  <link rel="preload" href="src/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="src/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="src/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="src/fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="src/css/module/swiper.css">
+
+  <link rel="stylesheet" href="src/css/normalize.css">
+  <link rel="stylesheet" href="src/css/fonts.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/module/header.css">
+  <link rel="stylesheet" href="src/css/module/intro.css">
+  <link rel="stylesheet" href="src/css/module/about.css">
+  <link rel="stylesheet" href="src/css/module/summary.css">
+  <link rel="stylesheet" href="src/css/module/todo.css">
+  <link rel="stylesheet" href="src/css/module/question.css">
+  <link rel="stylesheet" href="src/css/module/footer.css">
+
+  <link rel="stylesheet" href="src/css/adaptation/media768m-f.css">
+  <link rel="stylesheet" href="src/css/adaptation/media1024m-f.css">
+  <link rel="stylesheet" href="src/css/adaptation/media1224m-f.css">
+  <link rel="stylesheet" href="src/css/adaptation/media1920m-f.css">
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+  <script src="src/scripts/inert.js" defer></script>
+
+  <script src="src/scripts/swiper.js" defer></script>
+  <script src="src/scripts/menu.js" defer></script>
+  <script src="src/scripts/accordion.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-bar">
+      <div class="header-logo">
+        <picture>
+          <source media="(min-width: 1906px)" type="image/webp" srcset="src/img/img-xl-min/logo-white-xl@1x.webp 1x,
+            src/img/img-xl-min/logo-white-xl@2x.webp 2x,
+            src/img/img-xl-min/logo-white-xl@3x.webp 3x">
+
+          <source media="(min-width: 754px)" type="image/webp" srcset="src/img/img-lg-min/logo-white-lg@1x.webp 1x,
+            src/img/img-lg-min/logo-white-lg@2x.webp 2x,
+            src/img/img-lg-min/logo-white-lg@3x.webp 3x">
+
+          <source type="image/webp" srcset="src/img/img-xs-min/logo-white-xs@1x.webp 1x,
+            src/img/img-xs-min/logo-white-xs@2x.webp 2x,
+            src/img/img-xs-min/logo-white-xs@3x.webp 3x">
+
+          <source media="(min-width: 1906px)" srcset="src/img/img-xl-min/logo-white-xl@1x.png 1x,
+            src/img/img-xl-min/logo-white-xl@2x.png 2x,
+            src/img/img-xl-min/logo-white-xl@3x.png 3x">
+
+          <source media="(max-width: 754px)" srcset="src/img/img-lg-min/logo-white-lg@1x.png 1x,
+            src/img/img-lg-min/logo-white-lg@2x.png 2x,
+            src/img/img-lg-min/logo-white-lg@3x.png 3x">
+
+          <img src="src/img/img-xs-min/logo-dark-xs@1x.png" srcset="src/img/img-xs-min/logo-dark-xs@2x.png 2x,
+            src/img/img-xs-min/logo-dark-xs@3x.png 3x" alt="Евклид - проектные системы" />
+        </picture >
+      </div>
+
+      <nav class="header-nav">
+        <div class="nav-bar">
+          <a class="nav-bar__link" href="#">www.ewklid.com</a>
+
+          <button class="close-btn" type="button" aria-label="Закрыть меню"></button>
+        </div>
+
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#aboutAnchor">О нас</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#summaryAnchor">Проекты</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#todoAnchor">Этапы</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#questionAnchor">Отзывы</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#contactAnchor">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="search-btn" type="button" aria-label="поиск по сайту"></button>
+
+      <button class="burger burger__link" type="button" aria-label="развернуть меню"></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="intro_container">
+      <section class="intro">
+        <div class="swiper-container intro__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide_one"></div>
+
+            <div class="swiper-slide slide_two"></div>
+
+            <div class="swiper-slide slide_three"></div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <h1 class="intro__header">Проектные решения любой сложности</h1>
+
+        <p class="intro__desk">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по сей день остаются уделом проектантов</p>
+
+        <button class="btn-link" type="button">Заказать расчёт</button>
+      </section>
+    </div>
+
+    <div class="container">
+      <section id="aboutAnchor" class="about">
+        <h2 class="section_heading about__heading">О нас</h2>
+
+        <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+
+        <div class="summary">
+          <div class="preview">
+            <div class="preview__container">
+              <p class="preview__desk">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
+
+              <a class="preview__btn" href="#">Подробнее</a>
+            </div>
+          </div>
+
+          <ul id="summaryAnchor" class="summary__list">
+            <li class="summary__item summary__img_consult">
+              <p>
+                <b class="summary__header">Консультация с широким активом</b>
+                А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.
+              </p>
+            </li>
+            <li class="summary__item summary__img_quality">
+              <p>
+                <b class="summary__header">В своём стремлении повысить</b>
+                Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="todo">
+        <h2 id="todoAnchor" class="section_heading todo__heading">Как мы работаем</h2>
+
+        <div class="btn-group">
+          <button class="btn-group__step active" type="button">1 шаг</button>
+
+          <button class="btn-group__step" type="button">2 шаг</button>
+
+          <button class="btn-group__step" type="button">3 шаг</button>
+
+          <button class="btn-group__step" type="button">4 шаг</button>
+        </div>
+
+        <section class="todo__article">
+          <h3 class="todo__article__heading">Проводим консультацию</h3>
+
+          <p class="todo__article__desk">Влечет за&nbsp;собой процесс внедрения&nbsp;и модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограниче исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+
+          <a class="btn-link todo__article__link" href="#">Подробнее</a>
+
+          <a class="link-contract" href="#">Договор</a>
+        </section>
+      </section>
+
+      <section class="question">
+        <h2 id="questionAnchor" class="section_heading question__heading">Часто задаваемые вопросы</h2>
+
+        <ul class="question__list">
+          <li class="question__item">
+            <h3 class="question__desk">Из чего формируется конечная&nbsp;стоимость проекта?</h3>
+
+            <button class="question__btn" type="button" aria-label="открыть ответ на вопрос"></button>
+
+            <p class="question__text text_hide">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet, ea possimus, explicabo consequuntur ex illo nesciunt odit nostrum sequi esse autem iure temporibus nulla cumque aliquid officia iusto error?
+            </p>
+          </li>
+          <li class="question__item">
+            <h3 class="question__desk">У меня есть свой проект. Сможем ли мы его доработать&nbsp;/ реализовать?</h3>
+
+            <button class="question__btn" type="button" aria-label="открыть ответ на вопрос"></button>
+
+            <p class="question__text text_hide">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet, ea possimus, explicabo consequuntur ex illo nesciunt odit nostrum sequi esse autem iure temporibus nulla cumque aliquid officia iusto error?
+            </p>
+          </li>
+          <li class="question__item">
+            <h3 class="question__desk">Я выбираю между разными компаниями. В&nbsp;чём ваше отличие?</h3>
+
+            <button class="question__btn" type="button" aria-label="открыть ответ на вопрос"></button>
+
+            <p class="question__text text_hide">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet, ea possimus, explicabo consequuntur ex illo nesciunt odit nostrum sequi esse autem iure temporibus nulla cumque aliquid officia iusto error?
+            </p>
+          </li>
+          <li class="question__item">
+            <h3 class="question__desk">Могу ли я делегировать вам работу / согласование с подрядчиком&nbsp;/ организацией?</h3>
+
+            <button class="question__btn" type="button" aria-label="открыть ответ на вопрос"></button>
+
+            <p class="question__text text_hide">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet, ea possimus, explicabo consequuntur ex illo nesciunt odit nostrum sequi esse autem iure temporibus nulla cumque aliquid officia iusto error?
+            </p>
+          </li>
+          <li class="question__item">
+            <h3 class="question__desk">Могу ли я вернуть деньги на каком-либо из этапов работ?</h3>
+
+            <button class="question__btn" type="button" aria-label="открыть ответ на вопрос"></button>
+
+            <p class="question__text text_hide">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet, ea possimus, explicabo consequuntur ex illo nesciunt odit nostrum sequi esse autem iure temporibus nulla cumque aliquid officia iusto error?
+            </p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer_wrap">
+        <div  class="footer__logo">
+          <picture>
+            <source media="(min-width: 754px)" type="image/webp" srcset="src/img/img-xl-min/logo-dark-xl@1x.webp 1x,
+              src/img/img-xl-min/logo-dark-xl@2x.webp 2x,
+              src/img/img-xl-min/logo-dark-xl@3x.webp 3x">
+
+            <source type="image/webp" srcset="src/img/img-xs-min/logo-dark-xs@1x.webp 1x,
+              src/img/img-xs-min/logo-dark-xs@2x.webp 2x,
+              src/img/img-xs-min/logo-dark-xs@3x.webp 3x">
+
+            <source media="(min-width: 754px)" srcset="src/img/img-xl-min/logo-dark-xl@1x.png 1x,
+              src/img/img-xl-min/logo-dark-xl@2x.png 2x,
+              src/img/img-xl-min/logo-dark-xl@3x.png 3x">
+
+            <img src="src/img/img-xs-min/logo-dark-xs@1x.png" srcset="src/img/img-xs-min/logo-dark-xs@2x.png 2x,
+              src/img/img-xs-min/logo-dark-xs@3x.png 3x" alt="Евклид - проектные системы" />
+          </picture>
+        </div>
+
+        <ul class="footer-nav">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#aboutAnchor">О нас</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#summaryAnchor">Проекты</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#questionAnchor">Отзывы</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#contactAnchor">Договор оферты</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#contactAnchor">Договор подряда</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#copyAnchor">Конфиденциальность</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#todoAnchor">Партнёрское соглашение</a>
+          </li>
+        </ul>
+
+        <ul class="social">
+          <li class="social__item">
+            <a href="www.facebook.com" class="social__link facebook" target="_blank" aria-label="мы в facebook"></a>
+          </li>
+          <li class="social__item">
+            <a href="www.vk.com" class="social__link vk" target="_blank" aria-label="мы вконтакте"></a>
+          </li>
+          <li class="social__item">
+            <a href="www.instagram.com" class="social__link instagram" target="_blank" aria-label="мы в instagram"></a>
+          </li>
+        </ul>
+      </div>
+
+      <section id="contactAnchor" class="request">
+        <form class="request-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+          <h2 class="section_heading request-form__heading">Оставить заявку</h2>
+
+          <input class="form_input" type="text" name="fullName" placeholder="Фамилия, имя и отчество*" required>
+
+          <input class="form_input" type="email" name="email" placeholder="E-mail*" required>
+
+          <textarea class="request-form__message form_input" name="message" rows="4" placeholder="Сообщение"></textarea>
+
+          <button class="request-form__button btn-link" type="submit">Отправить данные</button>
+
+          <label class="confirm">
+            <input class="confirm__check" type="checkbox" name="confirm" required>
+
+            <span class="confirm__desk">Согласен на обработу данных</span>
+          </label>
+        </form>
+      </section>
+
+      <p id="copyAnchor" class="copy">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультаци с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
